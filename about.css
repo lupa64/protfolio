@@ -1,0 +1,192 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+:root{
+    --primarry-color:#fff;
+    --secondary-color:#333;
+    --main-color:#754ef9;
+}
+body{
+    background: var(--primarry-color);
+    color: var(--secondary-color);
+    /* overflow: hidden; */
+   
+}
+.header{
+    color:black ;
+    background-color: #d8d1f1 !important;
+    box-shadow: 1px 1px 100px 1px #754ef9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 7%;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+    font-size: 25px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    margin-right: auto;
+
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+}
+.navbar a.active::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: black;
+
+}
+.toggle{
+    display: flex;
+    background: red;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+.toggle .toggle-icon{
+    font-size: 24px;
+    color: #fff;
+}
+
+/* about */
+.about img{
+    -webkit-box-shadow: 10px -4px 59px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px -4px 59px -10px rgba(0,0,0,0.75);
+box-shadow: 10px -4px 59px -10px rgba(0,0,0,0.75);
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.progress{
+    background-color: rgb(228, 191, 191);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    -webkit-box-shadow: inset 49px 75px 92px -151px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 49px 75px 92px -151px rgba(0,0,0,0.75);
+box-shadow: inset 49px 75px 92px -151px rgba(0,0,0,0.75);
+
+
+
+}
+.about img{
+    -webkit-box-shadow: 10px -4px 59px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px -4px 59px -10px rgba(0,0,0,0.75);
+box-shadow: 10px -4px 59px -10px rgba(0,0,0,0.75);
+
+height: auto;
+width: 80%;
+border-radius: 50px;
+}
+.pro-valuel{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+.progress p{
+    color:white;
+    padding: 10px;
+
+}
+
+.pro-value2{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+.pro-value3{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+.pro-value4{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+/* @keyframes load1{
+    0%{
+        width: 98%;
+    }
+}
+
+@keyframes load2{
+    0%{
+        width: 70%;
+    }
+}
+
+@keyframes load3{
+    0%{
+        width: 98%;
+    }
+}
+@keyframes load4{
+    0%{
+        width: 65%;
+    }
+} */
+
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: rgb(24, 8, 8);
+    border: 1px solid black;
+    transition: 0,5s;
+}
+.btn2{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border:1px solid black;background-color:transparent;
+    color:black;
+    border-radius: 4px;
+}
+.btn2:hover{
+    background-color:black;
+    color:white;
+    border:none;
+    transition: 0,5s;
+}
